@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.dmdev'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+dependencies {
+    implementation 'org.hibernate:hibernate-core:6.4.4.Final'
+    runtimeOnly 'org.postgresql:postgresql:42.7.3' // Драйвер для взаимодействия с БД
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.16.1'
+    implementation 'org.slf4j:slf4j-log4j12:2.0.12'
+
+
+
+
+    compileOnly 'org.projectlombok:lombok:1.18.32' // Аннотации (compile only-потому что они нам не нужны после после этапа компиляции)
+    annotationProcessor 'org.projectlombok:lombok:1.18.32' // Процессор который умеет обробатывать эти аннотации
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.32' // Аннотация для тестов
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.32' // Аннотация для тестов
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
