@@ -1,8 +1,5 @@
-[2024-04-04 21:23:33,576] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[2024-04-04 21:23:33,847] WARN [org.hibernate.orm.connections.pooling: 81] HHH10001002: Using built-in connection pool (not intended for production use)
-[2024-04-04 21:23:33,853] INFO [org.hibernate.orm.connections.pooling: 136] HHH10001005: Loaded JDBC driver class: org.postgresql.Driver
-[2024-04-04 21:23:33,854] INFO [org.hibernate.orm.connections.pooling: 158] HHH10001012: Connecting with JDBC URL [jdbc:postgresql://localhost:5433/postgres]
-[2024-04-04 21:23:33,855] INFO [org.hibernate.orm.connections.pooling: 167] HHH10001001: Connection properties: {password=****, user=postgres}
-[2024-04-04 21:23:33,858] INFO [org.hibernate.orm.connections.pooling: 171] HHH10001003: Autocommit mode: false
-[2024-04-04 21:23:33,877] INFO [org.hibernate.orm.connections.pooling: 371] HHH10001115: Connection pool size: 20 (min=1)
-[2024-04-04 21:23:34,745] WARN [org.hibernate.orm.deprecation: 153] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[2024-05-21 06:35:34,496] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-update-timestamps-region' created in EhcacheManager.
+[2024-05-21 06:35:34,500] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[default-query-results-region] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2024-05-21 06:35:34,502] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'default-query-results-region' created in EhcacheManager.
+[2024-05-21 06:35:34,512] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[com.dmdev.entity.UserChat] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2024-05-21 06:35:34,514] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'com.dmdev.entity.UserChat' created in EhcacheManager.

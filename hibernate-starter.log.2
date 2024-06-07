@@ -1,7 +1,16 @@
-[2024-04-04 22:00:21,444] INFO [org.hibernate.orm.connections.pooling: 171] HHH10001003: Autocommit mode: false
-[2024-04-04 22:00:21,451] INFO [org.hibernate.orm.connections.pooling: 371] HHH10001115: Connection pool size: 20 (min=1)
-[2024-04-04 22:00:22,321] WARN [org.hibernate.orm.deprecation: 153] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-[2024-04-04 22:00:25,285] INFO [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: 58] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-[2024-04-04 22:02:51,760] INFO [org.hibernate.Version: 44] HHH000412: Hibernate ORM core version 6.4.4.Final
-[2024-04-04 22:02:52,383] INFO [org.hibernate.cache.internal.RegionFactoryInitiator: 50] HHH000026: Second-level cache disabled
-[2024-04-04 22:02:52,636] WARN [org.hibernate.orm.connections.pooling: 81] HHH10001002: Using built-in connection pool (not intended for production use)
+[2024-05-21 07:37:57,228] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'User' created in EhcacheManager.
+[2024-05-21 07:37:57,228] WARN [org.hibernate.orm.cache: 108] HHH90001006: Missing cache[com.dmdev.entity.Payment] was created on-the-fly. The created cache will use a provider-specific default configuration: make sure you defined one. You can disable this warning by setting 'hibernate.javax.cache.missing_cache_strategy' to 'create'.
+[2024-05-21 07:37:57,229] INFO [org.ehcache.core.EhcacheManager: 305] Cache 'com.dmdev.entity.Payment' created in EhcacheManager.
+[2024-05-21 07:37:57,789] INFO [org.hibernate.orm.connections.access: 52] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@448a6d00] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[2024-05-21 07:37:57,936] INFO [org.hibernate.engine.internal.StatisticalLoggingSessionEventListener: 261] Session Metrics {
+    23800 nanoseconds spent acquiring 1 JDBC connections;
+    21200 nanoseconds spent releasing 1 JDBC connections;
+    481500 nanoseconds spent preparing 5 JDBC statements;
+    8038800 nanoseconds spent executing 5 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    12553500 nanoseconds spent performing 12 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    512400 nanoseconds spent performing 1 L2C misses;
+    9726200 nanoseconds spent executing 2 flushes (flushing a total of 8 entities and 12 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
